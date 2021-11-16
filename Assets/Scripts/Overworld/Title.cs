@@ -47,7 +47,7 @@ public class Title : MonoBehaviour {
     }
 
     private IEnumerator TitlePhase1() {
-        Camera.main.GetComponent<AudioSource>().PlayOneShot(AudioClipRegistry.GetSound("intro_noise"));
+        Camera.main.GetComponent<AudioSource>().PlayOneShot(AudioClipRegistry.GetSound("tacobell"));
         while (Camera.main.GetComponent<AudioSource>().isPlaying)
             yield return 0;
         while (phase == 0) {
@@ -67,7 +67,7 @@ public class Title : MonoBehaviour {
                 if (!initPhase) {
                     initPhase = true;
 
-                    Camera.main.GetComponent<AudioSource>().clip = AudioClipRegistry.GetMusic("mus_menu");
+                    Camera.main.GetComponent<AudioSource>().clip = AudioClipRegistry.GetMusic("mus_menu_uf");
                     Camera.main.GetComponent<AudioSource>().Play();
                     try {
                         if (!SaveLoad.Load()) {

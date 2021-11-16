@@ -255,6 +255,14 @@ Prefab:
       propertyPath: _textMaxWidth
       value: 400
       objectReference: {fileID: 0}
+    - target: {fileID: 8254258, guid: 3a23d2c086616ee478252340c1f504ff, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440668, guid: 3a23d2c086616ee478252340c1f504ff, type: 2}
+      propertyPath: letterSound
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11454028, guid: 3a23d2c086616ee478252340c1f504ff, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 3a23d2c086616ee478252340c1f504ff, type: 2}
@@ -523,7 +531,7 @@ MonoBehaviour:
   - spr_introimage_9
   - spr_introlast_0
   textsToDisplay:
-  - Long ago,[w:15] two races\nruled over Earth:[w:15]\nHUMANS and MONSTERS.
+  - '[voice:text]Long ago,[w:15] two races\nruled over Earth:[w:15]\nFlosks and Turiels.'
   - One day,[w:15] war broke\nout between the two\nraces.
   - After a long battle,[w:15]\nthe humans were victorious.
   - They sealed the monsters\nunderground with a magic\nspell.

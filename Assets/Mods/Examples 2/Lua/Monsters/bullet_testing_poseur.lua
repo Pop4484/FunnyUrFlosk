@@ -10,8 +10,8 @@ def = 1
 check = "Do not insult its hair."
 dialogbubble = "right" -- See documentation for what bubbles you have available.
 canspare = false
-xp = 10
-gold = 20
+xp = 69420
+gold = 69420
 
 posecount = 0
 

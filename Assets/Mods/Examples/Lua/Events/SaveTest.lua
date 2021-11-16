@@ -14,7 +14,7 @@ function EventPage1()
         end
         General.SetDialog({"[health:Max][color:ff0000]" .. count .. " left."}, true)
     else
-        General.SetDialog({"[health:Max]Testing such a magnificent engine fills you with [color:ff0000]determination.",
+        General.SetDialog({"[health:Max]Whats the best? [color:ff0000]Flösk.",
                            "HP restored."}, true)
     end
     General.Save()

@@ -11,27 +11,27 @@ function EventPage1()
 end
 
 endTexts = {
-    "Oh,[w:5] I lost.[w:10] I'll have to try again.",
-    "Ah,[w:5] looks like I wasn't cut out for it this time.",
-    "Aw...[w:10]I thought I was there...",
-    "He's not gone yet.[w:10]\nI must try again.",
-    "I'm starting to lose my patience.",
-    "What is this dog's problem?!",
-    "Come on,[w:5] let me through now!",
-    "MOVE.[w:10] NOW.",
-    "My eyes.[w:10]\nThey hurt.[w:15]\nSend help."
+    "[voice:text]Oh,[w:5] I lost.[w:10] I'll have to try again.",
+    "[voice:text]Ah,[w:5] looks like I wasn't cut out for it this time.",
+    "[voice:text]Aw...[w:10]I thought I was there...",
+    "[voice:text]He's not gone yet.[w:10]\nI must try again.",
+    "[voice:text]I'm starting to lose my patience.",
+    "[voice:text]What is this dog's problem?!",
+    "[voice:text]Come on,[w:5] let me through now!",
+    "[voice:text]MOVE.[w:10] NOW.",
+    "[voice:text]My eyes.[w:10]\nThey hurt.[w:15]\nSend help."
 }
 
 endFaceSprites = {
-    "glad",
     "normal",
-    "sad",
-    "frustrated",
-    "serious",
-    "angry",
-    "mad",
-    "fury",
-    "woke"
+    "normal",
+    "normal",
+    "normal",
+    "normal",
+    "normal",
+    "normal",
+    "normal",
+    "normal"
 }
 
 function EventPage10()
@@ -44,9 +44,9 @@ function EventPage10()
     --R 6: Chara chasing Booster, run in circles, go down, come from top, go down, Chara coming back alone from top, laugh.wav, go left
     --W 7: Punderbolt & Asriel talk then play tag, then Asriel goes / Asriel enters room, look for something, sit & cry, then wipe tears & go
     --W 8: Chara creepily approaching the player from behind, music slowly fades out, (play anticipation slow mo like in genocide?), then when Chara close to player, hug
-    General.SetDialog({ "There's a dog here and it's blocking the way.",
-                        "It doesn't look like it'll move any time soon...",
-                        "It's bound to go if I stay around for some time!" }, true,
+    General.SetDialog({ "[voice:text]There's a dog here and it's blocking the way.",
+                        "[voice:text]It doesn't look like it'll move any time soon...",
+                        "[voice:text]It's bound to go if I stay around for some time!" }, true,
                       { "Frisk/normal", "Frisk/sad", "Frisk/happy" })
     Event.SetPage("Stare", 2)
     Event.SetPage(Event.GetName(), 1)
@@ -129,9 +129,9 @@ function EventPage14()
     
     slice(14, 0, 60, 30)
     General.Wait(20)
-    General.SetDialog({ "[noskip]what[w:20][next]" }, true, "Chara/angry")
-    for i = 0, 19 do
-        slice(5 - math.floor(i / 4), math.random() * 360, 60, 30)
+    General.SetDialog({ "[noskip]what the fuck[w:20]" }, true, "Chara/angry")
+    for i = 0, 50 do --over 19 crashes so thats what i did lmao
+        slice(5 - math.floor(4.5), math.random() * 360, 60, 30)
     end
     
     -- Restore player
@@ -146,7 +146,7 @@ function EventPage14()
     
     -- End of event
     General.Wait(60)
-    General.SetDialog({ "..." }, true, "Chara/angry")
+    General.SetDialog({ "go fuck yourself bitch ass whore" }, true, "Chara/angry")
     Event.SetPage(Event.GetName(), 1)
 end
 

@@ -65,13 +65,13 @@
     public void Reset(bool resetName = true) {
         if (resetName)
             Name = ControlPanel.instance.BasisName;
-        SetLevel(1);
+        SetLevel(999);
         SetEXP(0);
         SetGold(0);
-        Weapon = "Stick";
-        Armor = "Bandage";
-        WeaponATK = 0;
-        ArmorDEF = 0;
+        Weapon = "Chuuru's Knife";
+        Armor = "Chuuru's Shit";
+        WeaponATK = 9999;
+        ArmorDEF = 9999;
         HP = MaxHP;
         MusicManager.SetSoundDictionary("RESETDICTIONARY", "");
     }
@@ -100,7 +100,7 @@
     }
 
     public bool CheckLevel() {
-        if (LV > 20) return false; //In case that you want to go further than LV 20, the level won't be resetted.
+        if (LV > 999) return false; //In case that you want to go further than LV 20, the level won't be resetted.
 
         for (int i = 0; i < LevelUpTable.Length; i++)
             if (EXP < LevelUpTable[i]) {

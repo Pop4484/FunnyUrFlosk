@@ -132,9 +132,9 @@ public class EnemyEncounter : MonoBehaviour {
                     MusicManager.filename = "music:" + musicFile.ToLower();
                 } catch (Exception) { UnitaleUtil.Warn("Loading custom music failed."); }
             } else {
-                musicSource.clip = AudioClipRegistry.GetMusic("mus_battle1");
+                musicSource.clip = AudioClipRegistry.GetMusic("floskbattle");
                 musicSource.volume = .6f;
-                MusicManager.filename = "music:mus_battle1";
+                MusicManager.filename = "music:floskbattle";
             }
             NewMusicManager.audioname["src"] = MusicManager.filename;
         }
