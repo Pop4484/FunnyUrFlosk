@@ -65,13 +65,13 @@
     public void Reset(bool resetName = true) {
         if (resetName)
             Name = ControlPanel.instance.BasisName;
-        SetLevel(999);
+        SetLevel(1);
         SetEXP(0);
         SetGold(0);
-        Weapon = "Chuuru's Knife";
-        Armor = "Chuuru's Shit";
-        WeaponATK = 9999;
-        ArmorDEF = 9999;
+        Weapon = "Fists";
+        Armor = "Funny Clothes";
+        WeaponATK = 10;
+        ArmorDEF = 10;
         HP = MaxHP;
         MusicManager.SetSoundDictionary("RESETDICTIONARY", "");
     }
