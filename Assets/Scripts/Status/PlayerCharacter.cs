@@ -69,8 +69,8 @@ using System.IO;
         SetLevel(1);
         SetEXP(0); //ok so here you change the level!
         SetGold(0);
-        Weapon = "Fists";
-        Armor = "Funny Clothes";
+        Weapon = "Stick";
+        Armor = "Bandage";
         WeaponATK = 10;
         ArmorDEF = 10;
         HP = MaxHP;
