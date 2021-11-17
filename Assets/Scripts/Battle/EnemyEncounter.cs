@@ -50,6 +50,7 @@ public class EnemyEncounter : MonoBehaviour {
             script.Bind("CreateProjectile", (Func<Script, string, float, float, string, DynValue>)CreateProjectile);
             script.Bind("CreateProjectileAbs", (Func<Script, string, float, float, string, DynValue>)CreateProjectileAbs);
             script.Bind("SetButtonLayer", (Action<string>)LuaScriptBinder.SetButtonLayer);
+            SaveLoad.Load(); //here we load the overworld game file!!!!
             return true;
         }
     }
