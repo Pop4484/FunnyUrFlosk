@@ -66,7 +66,7 @@
         if (resetName)
             Name = ControlPanel.instance.BasisName;
         SetLevel(1);
-        SetEXP(0);
+        SetEXP(0); //ok so here you change the level!
         SetGold(0);
         Weapon = "Fists";
         Armor = "Funny Clothes";
@@ -74,6 +74,17 @@
         ArmorDEF = 10;
         HP = MaxHP;
         MusicManager.SetSoundDictionary("RESETDICTIONARY", "");
+
+        if (File.Exists(Application.persistentDataPath + "/AlMightySave.gd")) //load level from overworld save file into battle too :D
+        {
+            Debug.Log("We found an almighty save at this location : " + Application.persistentDataPath + "/AlMightySave.gd");
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/AlMightySave.gd", FileMode.Open);
+            almightycurrentGame = (AlMightyGameState)bf.Deserialize(file);
+            almightycurrentGame.LoadVariables();
+            file.Close();
+            return true;
+        }
     }
 
     public int GetNext() {
